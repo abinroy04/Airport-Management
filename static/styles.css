@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('/static/images/login_page.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+/*table heading and data*/
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+/*User mode back to home button
+.home-button {
+    background-color: #1c145e;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    max-width: 150px;
+    border-radius: 5px;
+}
+.home-button:hover {
+    background-color: #ff0000;
+}*/
+
+
+
+/*Login Page*/
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Full viewport height */
+    background-color:  #ffffff00; /* Light background color for contrast */
+}
+
+.login-form {
+    background: linear-gradient(135deg, #374bf78c, #9537eebe);
+    padding: 70px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Adjust the max width as needed */
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-form button {
+    background-color: #2eb133;  /*Set the button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 50%;
+}
+
+.login-form button:hover {
+    background: linear-gradient(160deg, #00fd08, #1c145e);
+}
+
+.flash {
+    /*flash box*/
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.flash.error {
+    /*flash text*/
+    background-color: #f32b3c;
+    color: #ffffff;
+    padding-left: 120px;
+    width: 79%;
+}
+
+.flash-message {
+    /*Flash text box*/
+    padding: 10px;
+    background-color: #ff4c4c; 
+    color: white; 
+    border-radius: 5px; 
+    text-align: center; 
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+}
+
+
+/*Admin mode*/
+.header-ribbon {
+    background-color: #1c145e;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #1c145e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: linear-gradient(135deg, #1c145e, #32f538);
+}
+
+.baggage-item {
+    /*entering bag weight*/
+    margin-bottom: 10px;
+}
+
+#addBaggage {
+    margin-bottom: 10px;
+    background-color: #1c145e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+/*
+#addBaggage:hover {
+    background-color: #170a91;
+}*/
+/*
+#submit:hover{
+    background-color: #208b25;
+}*/
+
+#updateBaggageForm label,
+#updateBaggageForm input,
+#updateBaggageForm select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#updateBaggageForm button {
+    margin-top: 10px;
+}
