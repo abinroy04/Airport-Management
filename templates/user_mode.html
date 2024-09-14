@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Mode</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>User Mode - Baggage Tracking</h1>
+
+    <form method="POST">
+        <label for="passenger_id">Passenger ID:</label>
+        <input type="text" id="passenger_id" name="passenger_id" required>
+        <button type="submit">Track Baggage</button>
+    </form>
+
+    {% if baggages %}
+        <h2>Baggage Details for Passenger ID: {{ passenger_id }}</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Baggage ID</th>
+                    <th>Weight (KG)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for baggage in baggages %}
+                <tr>
+                    <td>{{ baggage.id }}</td>
+                    <td>{{ baggage.weight }}</td>
+                    <td>{{ baggage.status }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+
+    <form method="POST" action="{{ url_for('logout') }}">
+        <button type="submit">Back to Home</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Center the content on the index page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        nav a {
+            display: inline-block;
+            margin-left: 50px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: #2eb133;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background: linear-gradient(160deg, #2eb133, #004209);
+        }
+        h1 {
+            margin-bottom: 30px; /* Add some space between the heading and buttons */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            sessionStorage.clear();
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Airport Management System</h1>
+        <nav>
+            <a href="{{ url_for('user_mode') }}" class="button">User Mode</a>
+            <a href="{{ url_for('admin_mode') }}" class="button">Admin Mode</a>
+        </nav>
+    </div>
+</body>
+</html>
